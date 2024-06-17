@@ -60,7 +60,7 @@ form {
 
 button {
   padding: 0.75rem;
-  background: #4CAF50;
+  background: #4c86af;
   color: white;
   border: none;
   border-radius: 4px;
@@ -69,7 +69,7 @@ button {
 }
 
 button:hover {
-  background: #45a049;
+  background: #a04545;
 }
 
 /* Footer styles */
@@ -78,4 +78,73 @@ footer {
   color: white;
   text-align: center;
   padding: 1rem 0;
+}
+
+/* Add styles for different button states */
+#registerButton {
+  background-color: #614caf;
+  color: white;
+  padding: 14px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+  transition: transform 0.3s;
+}
+
+#registerButton:hover {
+  opacity: 1;
+}
+
+#registerButton.loading {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.button-container {
+  position: relative;
+  width: 100%;
+}
+
+#registerButton.moved {
+  transform: translateX(100px);
+}
+
+#message {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+#message.success {
+  color: green;
+}
+
+#message.error {
+  color: red;
+}
+
+/* Add styles for the Twitter link */
+.social-links {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.twitter-link {
+  display: inline-block;
+  color: #1DA1F2;
+  font-size: 18px;
+  text-decoration: none;
+  padding: 10px 20px;
+  border: 1px solid #1DA1F2;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.twitter-link:hover {
+  background-color: #1DA1F2;
+  color: white;
+}
+
+.twitter-link .fab {
+  margin-right: 8px;
 }
